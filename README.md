@@ -64,3 +64,11 @@ We want Grin stack to get more stable. It could use a solid amount of integratio
 ### What if I find a bug / vulnerability that is not listed in the test cases? For example, a bug discovered during while setting up the test environment?
 
 By all means please report it to us and if we reproduce it you will be rewarded for it! Just keep in mind your report might be take us longer to reproduce as we haven't prepared a protocol for it.
+
+### How to enable DEBUG mode for log files?
+
+Edit your `grin-server-toml` and/or `grin-wallet.toml` file and make the following changes:
+```
+#log level for file: Error, Warning, Info, Debug, Trace
+file_log_level = "Debug"
+```
