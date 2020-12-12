@@ -58,3 +58,9 @@ We will only attempt to reproduce the bug reports. As for remaining tests we wil
 ## Why are we doing this?
 
 We want Grin stack to get more stable. It could use a solid amount of integration tests. We also believe that it is an excellent approach to promote Grin.
+
+## FAQ
+
+### What if I find a bug / vulnerability that is not listed in the test cases? For example, a bug discovered during while setting up the test environment?
+
+By all means please report it to us and if we reproduce it you will be rewarded for it! Just keep in mind your report might be take us longer to reproduce as we haven't prepared a protocol for it.
