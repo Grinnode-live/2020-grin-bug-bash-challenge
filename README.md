@@ -4,29 +4,44 @@
 
 ## How to participate?
 
-We prepared Docker-based test tools to get you started.
+This section describes the overall protocol.
 
-### How to setup test environment
+### Preparing environment
 
-1. Fork respository (add link)
-2. Create a separate branch dedicated to a particular test run.
-3. Choose a test from the issue tracker.
-4. Run your local test environment.
-5. Charge one of the wallets with some testnet Grins.
-6. Perform as many local transactions as you can, play with Wallet APIs.
+1. Properly setup GitHub and KeyBase accounts. Make sure your KeyBase points to same GitHub account as one that authored the gist bug reports!
+2. You can build and run the [node](https://github.com/mimblewimble/grin) as described [here](https://github.com/mimblewimble/docs/wiki/How-to-run-a-Grin-node)
+3. You can build and run the [wallet](https://github.com/mimblewimble/grin-wallet), if you want to test transaction you might need more than one local instance of the wallet.
+4. Some grin coins! Let us know on the KeyBase team channel if you need some to get your tests going.
+5. Check which tests are ready by opening our [issue tracker](https://github.com/Grinnode-live/2020-grin-bug-bash-challenge/issues) and using query `is:issue is:open no:assignee label:ready-for-test` or just click [here](https://github.com/Grinnode-live/2020-grin-bug-bash-challenge/issues?q=is%3Aissue+is%3Aopen+no%3Aassignee+label%3Aready-for-test). Do NOT assign to yourself more than one issue simultaneously!
+4. A lot of patience! 
+
+### Performing the test
+
+Follow the test description from the assigned GitHub issue. Use your local environment to run the test case. Make sure you gather enough data for your report, we would need at least the following
+
+1. Description of all the steps with as many details as possible. Do it in a form of `README.md` file.
+2. Node/Wallets debug logs with links to specific lines and your comments to each line indicating the meaning of the log line.
+3. Precise information about your test environment (operating system, build environment etc)
+
+Once you are done and gathered sufficient amount of data so that your test could be reproducible by someone else, wrap it all up in a single [secret gist repository](https://gist.github.com/). This would allow you to link a specific line of the logs. If your output log is too long gist might not allow you to link a specific line, in such case make sure you have a copy of specific line with the comment and line number ready for your report.
+
+### Reporting passing test
+
+If everything went as planned comment on the test issue that you are assigned to and add a `ready-for-review` label to it and you can assign yourself a different issue at this stage if you want. We will look into it, we might ask you to provide additional information or change something in your test if it wasn't executed properly. Once review is done we will assign `ready-for-reward` label to it and close it. The congratulations! You will officially get paid for testing a feature!
 
 ### How to report the bug
 
-1. Commit output logs and `docker-compose.yml` files to the repository and push to your fork.
-2. Prepare URLs that highlight errors in the logs.
-3. Open an issue here (link) and add label `Submission` to it.
-4. We will review your submission, and if we reproduce it we will change label to `Reproduced`, you may claim a prize for finding a bug!
+If the result is not as expected before you report a bug make sure you performed the test properly. Incorrect results resulting from incorrect usage are not bugs!
+
+Reporting the bug case is more tricky, as bugs are potential security vulnerabilities we do not want your report to go public. In such case please provide the link to your secret gist to @marekyggdrasil via KeyBase in a private message. We will attempt to reproduce your bug and if we succeed you will be paid for the bug report.
 
 ### How to claim your prize
 
-1. Get in [contact](https://github.com/MCM-Mike/grinnode.live/blob/master/contact.md) with us and provide a URL of the issue.
-2. We will respond to you with GRIN transaction file which you can receive with your personal wallet (NOT THE TESTNET WALLET!!!)
-3. After transaction is completed we will include the transaction proof at the end of the issue and add a label to `Rewarded` to it.
+Rewards will be distributed once the challenge is officially over (add end date here).
+
+1. We will keep track of who run which tests, but we are only human... So provide us with your list just for double check!
+2. Once everything checks out, we will reach you requesting your payment details (request BTC address / or provide GRIN transaction file, depending on the payment)
+3. After transaction is completed we will include the transaction proof at the end of the issue and add a label to `rewarded` to it. Ka-ching!!!
 
 ## Prizes / Free giveaways
 
@@ -43,9 +58,3 @@ We will only attempt to reproduce the bug reports. As for remaining tests we wil
 ## Why are we doing this?
 
 We want Grin stack to get more stable. It could use a solid amount of integration tests. We also believe that it is an excellent approach to promote Grin.
-
-## FAQ:
-
-(will be added if needed)
-
-(1) All T-Shirts will be sponsored by https://grin.fan/product/grinshirt/
