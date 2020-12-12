@@ -9,7 +9,7 @@ This section describes the overall protocol.
 ### Preparing environment
 
 1. Properly setup GitHub and KeyBase accounts. Make sure your KeyBase points to same GitHub account as one that authored the gist bug reports!
-2. You can build and run the [node](https://github.com/mimblewimble/grin) as described [here](https://github.com/mimblewimble/docs/wiki/How-to-run-a-Grin-node)
+2. You can build and run the [node](https://github.com/mimblewimble/grin) as described [here](https://github.com/mimblewimble/docs/wiki/How-to-run-a-Grin-node). Check [official documentation](https://docs.grin.mw/) if you want to know more.
 3. You can build and run the [wallet](https://github.com/mimblewimble/grin-wallet), if you want to test transaction you might need more than one local instance of the wallet.
 4. Some grin coins! Let us know on the KeyBase team channel if you need some to get your tests going.
 5. Check which tests are ready by opening our [issue tracker](https://github.com/Grinnode-live/2020-grin-bug-bash-challenge/issues) and using query `is:issue is:open no:assignee label:ready-for-test` or just click [here](https://github.com/Grinnode-live/2020-grin-bug-bash-challenge/issues?q=is%3Aissue+is%3Aopen+no%3Aassignee+label%3Aready-for-test). Do NOT assign to yourself more than one issue simultaneously!
@@ -20,7 +20,7 @@ This section describes the overall protocol.
 Follow the test description from the assigned GitHub issue. Use your local environment to run the test case. Make sure you gather enough data for your report, we would need at least the following
 
 1. Description of all the steps with as many details as possible. Do it in a form of `README.md` file.
-2. Node/Wallets debug logs with links to specific lines and your comments to each line indicating the meaning of the log line.
+2. Node/Wallets debug logs with links to specific lines and your comments to each line indicating the meaning of the log line. All log files should be set to `== debug` mode to provide sufficient level of details.
 3. Precise information about your test environment (operating system, build environment etc)
 
 Once you are done and gathered sufficient amount of data so that your test could be reproducible by someone else, wrap it all up in a single [secret gist repository](https://gist.github.com/). This would allow you to link a specific line of the logs. If your output log is too long gist might not allow you to link a specific line, in such case make sure you have a copy of specific line with the comment and line number ready for your report.
