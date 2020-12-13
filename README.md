@@ -72,3 +72,6 @@ Edit your `grin-server-toml` and/or `grin-wallet.toml` file and make the followi
 #log level for file: Error, Warning, Info, Debug, Trace
 file_log_level = "Debug"
 ```
+
+### How can I donate to this challenge?
+Please use the Grinnode.live donation addresses only: https://github.com/Grinnode-live/grinnode.live/blob/master/donation.md
