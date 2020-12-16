@@ -77,4 +77,4 @@ file_log_level = "Debug"
 Please use the Grinnode.live donation addresses only: https://github.com/Grinnode-live/grinnode.live/blob/master/donation.md
 
 ### Can I add a test case?
-Yes, we are encouraging you to do so. Just open an issue on https://github.com/Grinnode-live/2020-grin-bug-bash-challenge/issues and you created a test-case. 
+Yes, we are encouraging you to do so. Just open an issue on https://github.com/Grinnode-live/2020-grin-bug-bash-challenge/issues and you created a test-case. Please do not assign `ready-for-test` label, this is how we keep track of that needs to be changed.
