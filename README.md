@@ -6,6 +6,10 @@
 
 This section describes the overall protocol.
 
+### Disclaimer
+
+Please be aware the goal of this challenge is to find when things go wrong. You should NOT use your regular setup (wallet/accounts/node) to solve those challenges. To avoid losing access to your own funds prepare a separate setup meant just for the challenge and we will provide you with some Grin to get started.
+
 ### Preparing environment
 
 1. Properly setup GitHub and KeyBase accounts. Make sure your KeyBase points to same GitHub account as one that authored the gist bug reports!
